@@ -1,0 +1,12 @@
+[package]
+name = "pacemaker_cli"
+version = "0.1.0"
+edition = "2021"
+description = "CLI/Driver — migrated from src/main.c (argument parsing, banner, reporting; the tick loop itself now lives in pacemaker_core::orchestrator::SimulationOrchestrator)."
+
+[[bin]]
+name = "pacemaker_sim"
+path = "src/main.rs"
+
+[dependencies]
+pacemaker_core = { path = "../pacemaker_core" }

@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = [
+    "pacemaker_core",
+    "pacemaker_cli",
+]
+
+# NOTE (migration deviation, see MIGRATION_NOTES.md #0): zero external
+# dependencies anywhere in this workspace, deliberately. The legacy C
+# codebase used only the C standard library; this workspace mirrors that
+# posture with only `std`. This also means the workspace builds and
+# vendors cleanly with no crates.io access, consistent with the air-gapped
+# / FedRAMP deployment context this engagement is a dry-run stand-in for.

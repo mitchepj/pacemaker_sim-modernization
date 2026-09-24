@@ -1,0 +1,7 @@
+[package]
+name = "pacemaker_core"
+version = "0.1.0"
+edition = "2021"
+description = "Migrated pacemaker_sim domain services (PacingEngine, SensingService, TelemetryService, ArrhythmiaService, BatteryService, PersistenceService, SimulationOrchestrator). See MIGRATION_NOTES.md."
+
+[dependencies]
